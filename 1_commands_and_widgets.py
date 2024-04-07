@@ -1,5 +1,5 @@
 import streamlit as st
-st.write("Hello world!!!!")
+st.write("Hellooo worldy!!!!")
 st.write("---")
 
 
@@ -41,11 +41,11 @@ st.write("---")
 # my_list = [10,50,409] # Python list
 # my_dict = {'Number':[1,2,3], 'Color': ['Blue', 'Yellow', 'Green']} # python dictionary
 
-##### we will use pandas and numpy to generate a DataFrame. 
-##### For now, think of a DataFrame as a table with columns, rows and data.
+# #### we will use pandas and numpy to generate a DataFrame. 
+# #### For now, think of a DataFrame as a table with columns, rows and data.
 # import numpy as np
 # import pandas as pd 
-# np.random.seed(1)
+# np.random.seed(10)
 # df = pd.DataFrame(data={"Col1":np.random.randint(low=-100,high=100,size=10),
 #                         "Col2":np.random.randint(low=25,high=80,size=10)
 #                         })
@@ -69,10 +69,10 @@ st.write("---")
 ### Display plots ###
 ################################################################################
 
-##### We will use matplotlib, seaborn and plotly  for data visualization
-##### for now, we just need to understand the plotting capability
-##### the commands and their usability will come clear across the lessons and walkthrough project
-##### we will use a generated DataFrame
+# #### We will use matplotlib, seaborn and plotly  for data visualization
+# #### for now, we just need to understand the plotting capability
+# #### the commands and their usability will come clear across the lessons and walkthrough project
+# #### we will use a generated DataFrame
 # import numpy as np
 # import pandas as pd 
 # np.random.seed(1)
@@ -80,7 +80,7 @@ st.write("---")
 #                         "Col2":np.random.randint(low=25,high=80,size=10)
 #                         })
 
-#### and will plot the data
+# ### and will plot the data
 # import matplotlib.pyplot as plt
 # import seaborn as sns  
 # st.write("* Plot with Matplotlib/Seaborn") # we create a figure and plot the data
@@ -115,7 +115,7 @@ st.write("---")
 # import numpy as np
 # import pandas as pd 
 
-# @st.cache
+# @st.cache_data
 # def load_your_data():
 #     np.random.seed(1)
 #     df = pd.DataFrame(data={"Col1":np.random.randint(low=-100,high=100,size=10),
@@ -133,7 +133,7 @@ st.write("---")
 ### Display widgets ###
 ################################################################################
 
-##### Feel free to play around with all widgets options
+#### Feel free to play around with all widgets options
 # if st.button('Hit me'):  # if you click the button, it is True.
 #     st.write("Oh, you did!")
 # else:
@@ -146,29 +146,29 @@ st.write("---")
 #     st.write("What are you waiting for?")
 # st.write("---")
 
-# st.radio(label='Radio button options', options=[1,2,3])
+# st.radio(label='Radio button options', options=[1,2,3,4])
 # st.write("---")
 
-# st.selectbox(label='Select one single option', options=[1,2,3], key="1")
+# st.selectbox(label='Select one single option', options=[1,2,'banana'], key="1")
 # st.write("---")
 
 # st.multiselect(label='Select multiple options', options=[1,2,3])
 # st.write("---")
 
-# st.slider(label='Slide me', min_value=0, max_value=10)
+# st.slider(label='Slide me', min_value=-5, max_value=10)
 # st.write("---")
 
 
 # st.text_input(label='Enter some text')
 # st.write("---")
 
-# st.number_input(label='Enter a number')
+# st.number_input(label='Enter a number', help='This is a number input')
 # st.write("---")
 
 # st.text_area(label='Area for textual entry')
 # st.write("---")
 
-# st.date_input(label='Date input')
+# st.date_input(label='Date input as DD/MM/YYYY', format='DD/MM/YYYY')
 # st.write("---")
 
 # st.time_input('Time entry')
@@ -187,13 +187,13 @@ st.write("---")
 
 
 
-#### you can create 'columns' (or split the row space) and assign multiple items/widgets
-#### you should use st.beta_columns() and inform amount of columns
-#### that will be assigned to individual variables, i.e.: if there were three columns, you would have col1, col2, col3
-#### you will define the content on each variable with the command "with:"
-#### this example prints a list in the first column and display a widget in the second column
+# ### you can create 'columns' (or split the row space) and assign multiple items/widgets
+# ### you should use st.beta_columns() and inform amount of columns
+# ### that will be assigned to individual variables, i.e.: if there were three columns, you would have col1, col2, col3
+# ### you will define the content on each variable with the command "with:"
+# ### this example prints a list in the first column and display a widget in the second column
 
-# col1, col2 = st.beta_columns(2)
+# col1, col2 = st.columns(2)
 # with col1:
 #     st.write([1,2,3])
 # with col2:
@@ -208,7 +208,7 @@ st.write("---")
 
 
 # st.image(image="https://static.streamlit.io/examples/cat.jpg",
-#         caption='My first image', width=300)
+#         caption='My first image', width=200)
 # st.write("---")
 
 # st.write("Some song to bring light to your day")
